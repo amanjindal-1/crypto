@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Button from "../button";
 import Popup from "../popup/popup";
-import DepositPopup from "../deposit-popup";
+import DepositPopup from "../wallet/deposit-popup";
 
 const Portfolio = () => {
   const [open, setOpen] = useState(false);

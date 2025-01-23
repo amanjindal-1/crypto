@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import Button from "./button";
+import Button from "../button";
 
 const DepositPopup = ({ setOpen }) => {
   return (

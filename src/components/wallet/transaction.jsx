@@ -38,8 +38,13 @@ const Transaction = () => {
           }}
         />
       </div>
-
-      <History />
+      {selected == 1 ? (
+        <div>Positions</div>
+      ) : selected == 2 ? (
+        <div>Open orders</div>
+      ) : (
+        <History />
+      )}
     </div>
   );
 };

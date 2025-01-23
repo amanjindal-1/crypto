@@ -11,9 +11,18 @@ const Card = ({ data }) => {
             <img src="graph.svg" />{" "}
             <span className="min-w-max">${data.volume} Volumes</span>
           </div>
-          <button onClick={() => alert("Bookmark")}>
-            <img src={data.bookmark ? "fill-star.svg" : "star.svg"} />
-          </button>
+          <div>
+            <div className="flex gap-6">
+              <div className="relative flex">
+                <img src="coin1.svg" />
+                <img src="coin2.svg" className="absolute left-4" />
+              </div>
+
+              <button onClick={() => alert("Bookmark")}>
+                <img src={data.bookmark ? "fill-star.svg" : "star.svg"} />
+              </button>
+            </div>
+          </div>
         </div>
         <div className="flex gap-4 my-3.5 items-center">
           <img className="rounded-full overflow-hidden" src={data.img} />
