@@ -4,8 +4,8 @@ import Button from "../button";
 const PnL = () => {
   const [selected, setSelected] = useState(null);
   return (
-    <div className="border border-[#0FF] rounded-lg p-[19px] bg-[#1B1B23] flex-1 w-[480px]">
-      <div className="flex gap-14 mb-[59px] justify-between">
+    <div className="border border-[#0FF] rounded-lg p-[19px] bg-[#1B1B23] w-full md:max-w-[480px] h-auto">
+      <div className="flex gap-5 md:gap-14 mb-4 justify-between flex-col md:flex-row">
         <div>
           <div className="text-[#00ffff] text-2xl font-bold">Profit/Loss</div>
           <div className="text-2xl font-bold">$ 3,405.12</div>

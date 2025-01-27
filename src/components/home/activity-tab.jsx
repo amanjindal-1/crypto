@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
+import React from "react";
 
 dayjs.extend(relativeTime);
 
@@ -8,11 +9,11 @@ const ActivityTab = ({list, division}) => {
   return (
     <div className="flex gap-4 flex-col">
       {list.map((e, i) => (
-        <>
+        <React.Fragment key={i}>
         <div key={i} className="text-sm text-[#898989] flex gap-3">
-          <img src={e.img} alt="img" className="w-12 h-13 rounded-sm" />
-          <div className="flex justify-between w-full items-center">
-            <div className="">
+          <img src={e.img} alt="img" className="w-12 h-[50px] rounded-sm" />
+          <div className="flex justify-between w-full flex-col items-start gap-2 lg:gap-5 lg:items-center lg:flex-row">
+            <div>
               <div className="pb-1">{e.text1}</div>
               <div className=" flex items-center gap-3 font-medium">
                 <img
@@ -31,11 +32,11 @@ const ActivityTab = ({list, division}) => {
                 </span>
               </div>
             </div>
-            <div>{dayjs(new Date(parseInt(e.time))).fromNow()}</div>
+            <div className="min-w-max">{dayjs(new Date(parseInt(e.time))).fromNow()}</div>
           </div>
         </div>
         {division && <div className="border-b border-b-[#2c3f4f]" />}
-        </>
+        </React.Fragment>
       ))}
     </div>
   );

@@ -3,7 +3,7 @@ import Button from "../button";
 
 const DepositPopup = ({ setOpen }) => {
   return (
-    <div className="bg-[#121318] rounded-[10px] border border-[#00ffff] px-8 py-6 flex flex-col gap-5 relative items-center">
+    <div className="bg-[#121318] rounded-[10px] border border-[#00ffff] px-8 py-6 flex flex-col gap-5 relative items-center scale-75 md:scale-100">
       <div>
         <div className="text-[#00ffff] text-[32px] font-bold text-center">
           Deposit

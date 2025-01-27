@@ -1,3 +1,5 @@
+import TransactionTable from "./transactionTable";
+
 const History = () => {
   return (
     <div>
@@ -12,6 +14,7 @@ const History = () => {
           </div>
         </div>
       </div>
+      <TransactionTable />
     </div>
   );
 };

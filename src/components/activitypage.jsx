@@ -6,7 +6,7 @@ const Activitypage = () => {
   const [loading, setLoading] = useState(true);
   const options = [{ label: "Min $500", value: 1 }];
   return (
-    <div className="m-auto flex items-center justify-center p-14">
+    <div className="m-auto flex items-center justify-center p-6 md:p-14">
       <div className="rounded-md border border-[#0FF] w-[90%] px-6 py-8 bg-[#1B1B23]">
         <div className="">
           <div className="">

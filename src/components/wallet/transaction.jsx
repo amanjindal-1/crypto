@@ -6,10 +6,10 @@ const Transaction = () => {
   const [selected, setSelected] = useState(null);
   return (
     <div className="border border-[#0FF] rounded-lg p-[19px] bg-[#1B1B23] flex-1 w-full">
-      <div className="flex w-full gap-[30px] border-b border-white/30">
+      <div className="flex w-full gap-0 md:gap-[30px] border-b border-white/30 flex-col md:flex-row">
         <Button
           text="Positions"
-          className="text-2xl font-semibold px-0"
+          className="text-2xl font-semibold px-[0px]"
           onClick={() => setSelected(1)}
           style={{
             color: selected == 1 ? "#00FFFF" : "",
@@ -19,7 +19,7 @@ const Transaction = () => {
         />
         <Button
           text="Open Orders"
-          className="text-2xl font-semibold px-0"
+          className="text-2xl font-semibold px-[0px]"
           onClick={() => setSelected(2)}
           style={{
             color: selected == 2 ? "#00FFFF" : "",
@@ -29,7 +29,7 @@ const Transaction = () => {
         />
         <Button
           text="History"
-          className="text-2xl font-semibold px-0"
+          className="text-2xl font-semibold px-[0px]"
           onClick={() => setSelected(3)}
           style={{
             color: selected == 3 ? "#00FFFF" : "",

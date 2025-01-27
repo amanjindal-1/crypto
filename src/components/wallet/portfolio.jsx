@@ -7,8 +7,8 @@ const Portfolio = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      <div className="border border-[#0FF] rounded-lg p-[19px] bg-[#1B1B23] flex-1 min-w-max w-[480px]">
-        <div className="flex gap-14 mb-[59px]">
+      <div className="border border-[#0FF] rounded-lg p-[19px] bg-[#1B1B23] min-w-max w-full md:max-w-[480px]">
+        <div className="flex gap-5 md:gap-14 mb-[59px] flex-col md:flex-row">
           <div>
             <div className="text-[#00ffff] text-2xl font-bold">Portfolio</div>
             <div className="text-2xl font-bold">$ 32,455.12</div>
@@ -32,7 +32,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-col md:flex-row">
           <Button
             text="Deposit"
             onClick={() => setOpen(true)}

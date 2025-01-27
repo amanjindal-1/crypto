@@ -3,7 +3,7 @@ import Button from "./button";
 
 const SuggestionTabs = () => {
   return (
-    <div className="px-11 w-full mb-5">
+    <div className="px-[15px] lg:px-8 w-full mb-5">
       <div className="flex overflow-auto custom_scrollbar gap-5 py-5">
         {suggestions.map((e, i) => (
           <Button

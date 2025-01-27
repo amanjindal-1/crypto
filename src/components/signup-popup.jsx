@@ -80,7 +80,7 @@ const SignupPopup = ({ setIsOpen }) => {
   }
 
   return (
-    <div className="bg-[#121318] rounded-[10px] border border-[#00ffff] px-8 py-10 flex flex-col gap-6 relative">
+    <div className="bg-[#121318] rounded-[10px] border border-[#00ffff] px-8 py-10 flex flex-col gap-6 relative scale-75 md:scale-100">
       <div className="text-[#00ffff] text-[32px] font-bold">
         Sign In to 100XBet
       </div>

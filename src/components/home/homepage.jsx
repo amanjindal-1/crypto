@@ -11,21 +11,21 @@ const Homepage = () => {
   return (
     <>
       <SuggestionTabs />
-      <div className="px-10">
-        <div className="flex gap-4 text-[#0ff] text-[1.38rem] font-bold items-center justify-center">
+      <div className="px-[15px] lg:px-8">
+        <div className="flex flex-col md:flex-row gap-4 text-[#0ff] text-[1.38rem] font-bold items-center justify-center text-center">
           <img src="diamond.png" style={{ width: 28, height: 22 }} />
-          <span>
+          <div>
             You win even if you lose the bet because you get the meme with every
             bet.
-          </span>
+          </div>
         </div>
-        <div className="py-10 grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div className="py-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[15px] lg:gap-7">
           {Array.from({ length: 9 }).map((_, i) => (
             <Card data={getRandomCard()} key={i} />
           ))}
         </div>
-        <div className="flex gap-7 mb-16">
-          <div className="flex-1 border border-[#0FF] rounded-2xl px-7 py-9 bg-[#121318] min-w-[50%]">
+        <div className="flex flex-col md:flex-row gap-7 mb-16">
+          <div className="flex-1 border border-[#0FF] rounded-2xl px-7 py-9 bg-[#121318]">
             <div className="text-[#0FF] text-2xl font-semibold border-b border-[#0FF] pb-5 mb-5">
               Recent Trading Activities
             </div>
@@ -35,7 +35,7 @@ const Homepage = () => {
             <div className="text-[#0FF] text-2xl font-semibold border-b border-[#0FF] pb-5 mb-5">
               Top Volume This Week
             </div>
-            <div className="flex gap-4 min-w-[50%]">
+            <div className="flex gap-4 flex-col lg:flex-row">
               <div className="w-1/2 flex flex-col gap-4">
                 {rankData.slice(0, 5).map((e, i) => (
                   <div key={i} className="flex gap-4">
